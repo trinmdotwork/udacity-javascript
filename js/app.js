@@ -118,9 +118,9 @@ function getHumanDinoArray(dinos) {
 
 // Generate Tiles for each Dino in Array
 function GenerateTiles(animals) {
-  whereFact = (dinosaur) =>
+  const whereFact = (dinosaur) =>
     `${capitalizeFirstLetter(dinosaur.species)} lived in ${dinosaur.where}.`;
-  whenFact = (dinosaur) => `lived during ${dinosaur.when} period.`;
+  const whenFact = (dinosaur) => `lived during ${dinosaur.when} period.`;
 
   function createAnimal(animal) {
     const animalElement = document.createElement("div");
